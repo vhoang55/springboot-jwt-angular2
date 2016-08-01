@@ -1,0 +1,47 @@
+<header class="intro-header">
+    <div class="container" >
+        <div class="row"  class="text-left">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                    <h2> Technology Stack Use</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row" class="text-left">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <br>
+
+            <p>
+                A starter project to learn about angular 2 concepts implementing a blog application using
+                Spring boot, Spring Security integrate with jwt token.
+            </p>
+            <p>
+                Currently, Angular 2 is still in CR-3, so a lot of things are not finalized yet. From CR-1 to CR-3,
+                the Angular team is still re-write the Router Module, so a lot of things are not finalized yet.
+            </p>
+            <p>
+                Front-End side:  <br>Need to look into angular2 form builder or template validation to do form validation. <br>
+                Also, Need to break this up and use a build tool like gulp or webpack to bundle the entire file into a bundled js. <br>
+                This way, a single page can be served up by nodejs, and and referenced by the spring web app. This approach enables us
+                to achieve the micro-service architecture where Web UI or Mobile client is not coupled with the main application.
+            </p>
+
+            <p>
+                Back-End side: <br> Current implementation of the jtw token is not very flexible. As once a jwt token is issued to the client,
+                the token is last for life time. We cannot revoke client access to api once jwt token is granted. Therefore, we need to use
+                Spring OAuth2 in addition to jtw token to implement such solution.  here is a discussion
+                http://sgdev-blog.blogspot.com/2016/04/spring-oauth2-with-jwt-sample.html <br><br>
+
+                Also, the next step is to pull turn this into a micro-services ready architecture by pulling in spring cloud, particularly
+                spring-zuul to proxy all the api calls, and spring-eureka manage api discovery. Will work on that next.
+            </p>
+
+
+        </div>
+    </div>
+</div>
+<br><br><br>
